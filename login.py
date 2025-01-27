@@ -28,3 +28,6 @@ def profile():
 def logout():
     session.pop('username', None)  # Remove username from session
     return "You have been logged out."
+
+if __name__ == "__main__":
+    app.run(debug=True)
